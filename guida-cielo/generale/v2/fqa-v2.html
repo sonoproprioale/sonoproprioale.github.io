@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FQA V2 · Cielo Bot</title>
+  <script>(function(){try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}})()</script>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body data-root="../../" data-page="generale/v2/fqa-v2.html">
+
+<article class="doc">
+  <h1>FQA V2</h1>
+
+  <div class="hint info">
+    <p>Qui troverai tutte le spiegazioni dei vari sistemi della V2!</p>
+  </div>
+
+  <blockquote><h4 id="elenco-di-tutti-i-sistemi-aggiornati">📯 Elenco di tutti i sistemi aggiornati</h4></blockquote>
+
+  <p><a href="../../bot/florence-roleplay/economia.html">Sistema Economico</a>, <a href="../../bot/florence-roleplay/stipendi.html">Sistema Stipendi</a>, <a href="../../bot/florence-roleplay/cittadinanza.html">Sistema Cittadinanza</a>, <a href="../../bot/florence-roleplay/porto-darmi.html">Sistema Porto d'Armi</a> e <a href="../../bot/db-fdo.html">Sistema Forze dell'Ordine</a>.</p>
+
+  <blockquote><h4 id="con-il-nuovo-sistema-ho-perso-alcuni-dati">📊 Con il nuovo sistema ho perso alcuni dati?</h4></blockquote>
+
+  <p>Teoricamente, la risposta sarebbe <em>no, non hai perso alcun dato</em>.</p>
+
+  <p>Tuttavia, considerando l'elevatissimo numero di cittadinanze, porti d'armi e di tutti gli altri dati raccolti dal bot nel corso del tempo per garantirti un'esperienza di RP sempre più completa, non possiamo escludere che qualche dato possa essere stato accidentalmente tralasciato durante il trasferimento.</p>
+
+  <p>Il <em>Gruppo Tecnico</em> ha infatti trasferito più di <em>10.000 dati</em> da un sistema all'altro. Con un'importazione di queste dimensioni, potrebbe essere capitato che qualche informazione non sia stata trasferita correttamente durante una delle operazioni di migrazione.</p>
+
+  <p>Per questo motivo abbiamo introdotto il comando /sincronizzadati, che permette di avviare una nuova sincronizzazione tra i database e verificare che tutti i dati siano correttamente presenti nel nuovo sistema.</p>
+
+  <p>Se, dopo aver utilizzato il comando, alcuni dati risultassero ancora mancanti o la sincronizzazione non dovesse completarsi correttamente, ti chiediamo di <em>aprire un ticket amministrativo</em>. In modo tale che possiamo effettuare le verifiche necessarie e, ove possibile, procedere al ripristino dei dati mancanti.</p>
+
+  <blockquote><h4 id="codice-id-cittadinanza">🆔 Codice ID Cittadinanza</h4></blockquote>
+
+  <p>Per ogni richiesta di cittadinanza viene generato automaticamente un ID univoco, generalmente composto da circa 36 caratteri. Questo ID viene salvato insieme a tutte le informazioni relative alla richiesta e permette, in caso di eventuali bug o errori, di recuperare la cittadinanza in modo rapido e preciso.</p>
+
+  <p>L'ID è visibile esclusivamente nel canale dedicato alla gestione e all'accettazione o al rifiuto delle cittadinanze. Non verrà mai inviato tramite DM dal bot, salvo in caso di errori o situazioni eccezionali.</p>
+
+  <blockquote><h4 id="limitazione-user-roblox-cittadinanza">🎮 Limitazione User Roblox (Cittadinanza)</h4></blockquote>
+
+  <p>Per prevenire abusi e possibili violazioni, è stato introdotto un sistema automatico di controllo e filtro degli User Roblox inseriti nel campo "User Roblox" durante la richiesta di cittadinanza.</p>
+
+  <p>In precedenza, la verifica dell'User Roblox veniva effettuata manualmente dallo staff incaricato di accettare o rifiutare le richieste. Con il nuovo sistema, il bot effettuerà automaticamente tutti i controlli necessari.</p>
+
+  <p>Non sarà possibile utilizzare lo stesso User Roblox, o lo stesso ID Roblox, per più di una (1) cittadinanza. Se il sistema rileverà che l'User Roblox o l'ID inserito è già associato a una cittadinanza esistente, la richiesta verrà automaticamente bloccata e verrà mostrato un messaggio di errore.</p>
+
+  <p>Se ritieni che il blocco sia avvenuto per errore, ti invitiamo ad aprire un ticket amministrativo affinché lo staff possa effettuare le opportune verifiche.</p>
+
+  <p>In alcuni casi, potrebbe essere richiesto di verificare la proprietà dell'account Roblox attraverso servizi esterni di verifica, come <a href="https://rover.link/">RoVer</a> o <a href="https://blox.link/">Bloxlink</a>.</p>
+
+  <blockquote><h4 id="ricerca-nome-e-cognome-per-la-cittadinanza">🪪 Ricerca Nome e Cognome per la cittadinanza</h4></blockquote>
+
+  <p>Con il nuovo sistema del comando /controlla-carta-identita è stato introdotto il campo [cittadino], che permette di cercare una cittadinanza utilizzando diversi dati identificativi:</p>
+
+  <ul>
+    <li>User Roblox</li>
+    <li>ID Roblox</li>
+    <li>Nome Discord, inserendo anche la @</li>
+    <li>Nome e Cognome</li>
+  </ul>
+
+  <p>Per la ricerca tramite <em>Nome e Cognome</em>, è importante specificare che il sistema può rilevare più cittadinanze associate allo stesso nominativo. In questo caso, il bot mostrerà le cittadinanze individuate all'interno di uno stesso embed.</p>
+
+  <p>Qualora vengano rilevate più di due cittadinanze, sarà possibile utilizzare le <em>frecce di navigazione</em> verso destra e verso sinistra per passare da una cittadinanza all'altra, creando un sistema di visualizzazione simile alle <em>pagine di un libro</em>. In questo modo sarà possibile consultare tutte le cittadinanze associate al nominativo senza dover inviare un nuovo comando.</p>
+
+  <blockquote><h4 id="nuovo-sistema-multe-and-multa-id">👮🏼‍♂️ Nuovo sistema Multe &amp; multa-id</h4></blockquote>
+
+  <p>Con l'introduzione della <em>Versione 2 del bot</em>, abbiamo deciso di riprogettare completamente il sistema delle multe.</p>
+
+  <p>Nella versione precedente, le Forze dell'Ordine eseguivano il comando /multa, indicando l'importo e il motivo della sanzione. Una volta emessa, la multa veniva addebitata immediatamente al cittadino.</p>
+
+  <p>Con il nuovo sistema, invece, il funzionamento cambia.</p>
+
+  <p>Il comando /multa rimane disponibile alle Forze dell'Ordine e mantiene sostanzialmente le stesse modalità di utilizzo. La differenza principale è che, una volta emessa una multa, il bot genererà automaticamente un multa-ID univoco di 5 caratteri e lo invierà tramite DM al cittadino multato, insieme alle informazioni necessarie.</p>
+
+  <p>Il multa-ID servirà successivamente per effettuare il pagamento tramite il comando /paga-multa. Inserendo l'ID della multa, il bot recupererà automaticamente tutti i dati associati alla sanzione e mostrerà un embed contenente il riepilogo completo della multa.</p>
+
+  <p>All'interno dell'embed saranno presenti due pulsanti:</p>
+
+  <ul>
+    <li>Paga, conferma il pagamento e sottrae l'importo della multa direttamente dal conto bancario del cittadino. Al termine dell'operazione, verrà inviata tramite DM una ricevuta dell'avvenuto pagamento.</li>
+    <li>Annulla, interrompe l'operazione senza effettuare alcun pagamento.</li>
+  </ul>
+
+  <p>In questo modo, la multa non verrà più pagata automaticamente al momento della sua emissione, ma sarà il cittadino a dover effettuare il pagamento utilizzando il relativo multa-ID.</p>
+
+  <blockquote><h4 id="come-funziona-il-nuovo-sistema-di-arresti">⛓️ Come funziona il nuovo sistema di arresti?</h4></blockquote>
+
+  <p>Nel corso del tempo ci è stato chiesto più volte di <em>ottimizzare e velocizzare il sistema di arresti e schedature</em>. Abbiamo quindi introdotto diverse soluzioni, tra cui anche l'utilizzo dell'intelligenza artificiale, ma non sempre queste soluzioni sono riuscite a garantire la velocità e l'efficacia che cercavamo.</p>
+
+  <p>Con la Versione 2 del bot abbiamo quindi deciso di riprogettare anche questo sistema, rendendolo molto più semplice, veloce e automatizzato.</p>
+
+  <p>Nel vecchio sistema era necessario compilare ben 7 campi:</p>
+
+  <ul>
+    <li>Nome e Cognome</li>
+    <li>Data di nascita</li>
+    <li>User Discord</li>
+    <li>User Roblox</li>
+    <li>Verbale di arresto</li>
+    <li>Foto del soggetto</li>
+    <li>Firma degli agenti</li>
+  </ul>
+
+  <p>Un processo che, soprattutto nel lungo periodo, poteva risultare lento, ripetitivo e poco pratico.</p>
+
+  <p>Con il nuovo sistema, invece, sarà sufficiente compilare 3 campi:</p>
+
+  <ul>
+    <li>Selezionare il cittadino, tramite User Roblox, ID Roblox oppure User Discord</li>
+    <li>Inserire brevemente il verbale di arresto</li>
+    <li>Selezionare il tipo di pg, scegliendo tra primo pg o secondo pg</li>
+  </ul>
+
+  <p>Non sarà necessario inserire nient'altro manualmente.</p>
+
+  <p>Il bot utilizzerà automaticamente l'<em>User Roblox</em>, l'<em>ID Roblox</em> o l'<em>User Discord</em> fornito per recuperare e compilare tutti i dati disponibili, tra cui <em>Nome</em> e <em>Cognome</em>, <em>Data di Nascita</em> e <em>Genere</em>.</p>
+
+  <p>Anche la generazione degli articoli verrà automatizzata: l'<em>intelligenza artificiale</em> analizzerà il verbale di arresto inserito dall'agente e genererà gli articoli pertinenti sulla base del contenuto del verbale.</p>
+
+  <p>Infine, non sarà più necessario caricare manualmente una fotografia del soggetto. La foto utilizzata nella schedatura sarà direttamente l'<em>avatar Roblox</em> del cittadino, recuperato in tempo reale.</p>
+
+  <p>L'obiettivo del nuovo sistema è quindi semplice. Ridurre il lavoro manuale, eliminare i dati ripetitivi e rendere l'intera procedura di arresto e schedatura molto più rapida.</p>
+
+  <blockquote><h4 id="ma-con-la-nuova-versione-ce-altro">🥴 Ma con la nuova versione c'è altro?</h4></blockquote>
+
+  <p>Ebbene sì, gli aggiornamenti non finiscono qui.</p>
+
+  <p>Sono stati introdotti moltissimi altri sistemi e miglioramenti, alcuni dei quali pensati per rendere il bot più flessibile e adatto alle diverse realtà di Florence Roleplay.</p>
+
+  <p>Tra le novità più importanti c'è la possibilità di utilizzare <em>Florence Roleplay anche all'interno di più server secondari</em>, mantenendo però alcune limitazioni specifiche in base al contesto del server.</p>
+
+  <p>Ad esempio, se il bot viene aggiunto nel server del <em>118</em>, non sarà possibile visualizzare o utilizzare comandi come <em>/arresto, /multa, /paga-multa</em> e tutti gli altri comandi che non risultano pertinenti con le attività del 118.</p>
+
+  <p>Il sistema riconoscerà quindi il <em>contesto del server</em> e limiterà automaticamente l'accesso alle funzionalità non necessarie.</p>
+
+  <p>Questa limitazione è stata introdotta appositamente per garantire una maggiore <em>coerenza con la logica RP.</em> Ogni server potrà utilizzare esclusivamente i sistemi realmente pertinenti alle proprie attività, evitando la presenza di comandi inutili o fuori contesto.</p>
+
+  <blockquote><h4 id="immatricolazione-veicoli">🚗 Immatricolazione Veicoli</h4></blockquote>
+
+  <p>Il comando per l'immatricolazione dei veicolo può essere usato solamente da chi lavora all'interno del concessionario, avendo l'immatricolazione del veicolo ti consentirà di accedere a diversi servizi come l'assicurazione e l'assistenza. Oltre che la possibilità di mettere sul veicolo vari oggetti.</p>
+</article>
+
+<script src="../../assets/js/nav.js"></script>
+<script src="../../assets/js/app.js"></script>
+</body>
+</html>

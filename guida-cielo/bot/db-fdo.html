@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DB FdO · Florence RP Bot</title>
+  <script>(function(){try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}})()</script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-root="../" data-page="bot/db-fdo.html">
+
+<article class="doc">
+  <h1>DB FdO</h1>
+
+  <div class="hint info">
+    <p>Queste sono tutte le informazioni del Bot Database FdO.</p>
+  </div>
+
+  <p class="center">Per vedere il sito ufficiale del Bot clicca <a href="https://cieluxo.com/database.html">qui</a>.</p>
+
+  <h3>Piccola introduzione</h3>
+
+  <p>Il Bot è stato creato per gestire e coordinare in modo efficace tutte le Forze dell'Ordine, il Database nasce anche come tramite per arresti e denunce dirette per la Procura di Florence.</p>
+
+  <h3>Funzioni del Bot</h3>
+
+  <details class="expand">
+    <summary><strong>/arresto</strong></summary>
+    <div class="expand-body">
+      <div class="hint info">
+        <p>Questo comando, per l'inserimento degli articoli dell'arresto utilizza l'AI.</p>
+      </div>
+
+      <figure>
+        <img src="../assets/img/db-fdo/arresto-opzioni-obbligatorie.png" alt="">
+        <figcaption>Tutte le opzioni obbligatorie.</figcaption>
+      </figure>
+
+      <p>Il comando <code>/arresto</code> viene usato per eseguire ed ufficializzare un arresto. Questo comando viene ha il compito di trasmettere l'Arresto alla Procura.</p>
+
+      <p>Opzioni Obbligatorie: <code>user_discord</code>, <code>nome_e_cognome</code>, <code>data_di_nascita</code>, <code>foto_soggetto</code>, <code>firma_1</code> e <code>reparto</code>.</p>
+
+      <p>Opzioni Facoltative: <code>firma_2</code>, <code>fima_3</code>, <code>firma_4</code>, <code>fima_5</code>, <code>firma_6</code>, <code>foto_2</code>, <code>foto_3</code>, <code>foto_4</code>, <code>foto_5</code>.</p>
+
+      <p>Opzioni Obbligatorie nel form di arresto: <code>Verbale di Arresto</code>.</p>
+
+      <figure>
+        <img src="../assets/img/db-fdo/arresto-opzioni-facoltative.png" alt="">
+        <figcaption>Tutte le opzioni Facoltative.</figcaption>
+      </figure>
+
+      <div class="hint info">
+        <p>Dimostrazione dell'esecuzione del comando.</p>
+      </div>
+
+      <ol>
+        <li>Il comando va eseguito sul server "Database FdO" sul canale <a href="https://discord.com/channels/1407469914175836210/1409790094721945681">🤖・comandi-bot</a>.</li>
+      </ol>
+
+      <figure><img src="../assets/img/db-fdo/arresto-opzioni-obbligatorie.png" alt=""></figure>
+
+      <ol start="2">
+        <li>Una volta compilati tutti i dati che sono richiesti del comando e una volta inviato il comando il bot manderà questo messaggio.</li>
+      </ol>
+
+      <figure><img src="../assets/img/db-fdo/arresto-messaggio-continua.png" alt=""></figure>
+
+      <ol start="3">
+        <li>Premere sul pulsante verde "Continua".</li>
+        <li>Una volta premuto il pulsante "Continua" si aprirà questo Form:</li>
+      </ol>
+
+      <figure><img src="../assets/img/db-fdo/arresto-form-verbale.png" alt=""></figure>
+
+      <ol start="5">
+        <li>Qui bisognerà scrivere tutto il verbale di arresto, come è stato preso il soggetto, cosa ha fatto, ect...</li>
+        <li>Una volta premuto su "Invia" il Bot genererà questo pulsante:</li>
+      </ol>
+
+      <figure><img src="../assets/img/db-fdo/arresto-pulsante.png" alt=""></figure>
+
+      <ol start="7">
+        <li>In questo caso vuol dire che non ci sono stati errori nell'ecuzione del comando.</li>
+        <li>Se il comando è andato a buon fine il Bot restituirà questo messaggio.</li>
+      </ol>
+
+      <figure><img src="../assets/img/db-fdo/arresto-risultato.png" alt=""></figure>
+
+      <p>Il numero nel quadratino rosso, <code>55</code>, è il totale di Arresti compoiuti da quando è nato il sistema. Il numero può essere visualizzato anche sul comando <code>/profilo poliziotto</code>.</p>
+
+      <div class="hint danger">
+        <p>In caso in cui al <strong>punto 4</strong> (compilazione del Form "Verbale di Arresto") si <strong>visualizzi un errore</strong> per esempio "<em>Si è verificato un errore. Riprova</em>" quando hai premuto su "Invia" non ti preoccupare, segui i passaggi qui sotto.</p>
+      </div>
+
+      <ol>
+        <li><strong>IMPORTANTISSIMO</strong>: Non cliccare mai su "Annulla" o perderai tutto quello che hai scritto.</li>
+        <li>Copia quello che hai scritto. (CTRL C per pc)</li>
+        <li>Clicca su "Annulla".</li>
+        <li>Ri-premi il pulsante verde "Continua".</li>
+        <li>Incolla quello che hai copiato prima. (CTRL V per pc)</li>
+        <li>Invia.</li>
+      </ol>
+
+      <p><strong>Perché si verifica quell'errore?</strong></p>
+
+      <blockquote>
+        <p>Per quanto possa sembrare "assurdo" quell'errore è piuttosto comune, quell'errore si verifica qual ora il tempo passato dalla generazione di quel Form all'invio sia passato troppo tempo che le API di Discord non riescono più a reindirizzare i dati scritti in quel campo di testo.</p>
+      </blockquote>
+    </div>
+  </details>
+
+  <details class="expand">
+    <summary><strong>/denuncia</strong></summary>
+    <div class="expand-body">
+      <figure>
+        <img src="../assets/img/db-fdo/denuncia-opzioni-obbligatorie.png" alt="">
+        <figcaption>Tutte le opzioni obbligatorie.</figcaption>
+      </figure>
+
+      <p>Il comando <code>/denuncia</code> viene usato per eseguire ed ufficializzare una denuncia. Questo comando ha il compito di trasmettere la Denuncia alla Procura.</p>
+
+      <p>Opzioni Obbligatorie: <code>discord_denunciante</code>, <code>chiocciola_roblox_denunciante</code>, <code>nome_cognome_denunciante</code>, <code>nome_cognome_denunciato</code>, <code>motivo_denuncia</code>, <code>luogo_e_data_dei_fatti</code>, <code>presso</code>.</p>
+
+      <p>Opzioni Facoltative: <code>discord_denunciato</code>, <code>roblox_denunciato</code>, <code>altro</code>.</p>
+
+      <figure>
+        <img src="../assets/img/db-fdo/denuncia-opzioni-facoltative.png" alt="">
+        <figcaption>Tutte le opzioni Facoltative.</figcaption>
+      </figure>
+
+      <div class="hint info">
+        <p>Dimostrazione dell'esecuzione del comando.</p>
+      </div>
+
+      <ol>
+        <li>Il comando va eseguito sul server "Database FdO" sul canale <a href="https://discord.com/channels/1407469914175836210/1409790094721945681">🤖・comandi-bot</a>.</li>
+      </ol>
+
+      <figure><img src="../assets/img/db-fdo/denuncia-opzioni-obbligatorie.png" alt=""></figure>
+
+      <ol start="2">
+        <li>Una volta compilati tutti i dati che sono richiesti del comando e una volta inviato il comando il bot manderà questo messaggio.</li>
+      </ol>
+
+      <figure><img src="../assets/img/db-fdo/denuncia-risultato.png" alt=""></figure>
+
+      <p>La denuncia è stata riposta correttamente nel database e la procura la visualizzerà il prima possibile.</p>
+    </div>
+  </details>
+
+  <details class="expand">
+    <summary><strong>/profilo poliziotto</strong></summary>
+    <div class="expand-body">
+      <p>Il comando <code>/profilo poliziotto</code> viene usato per visualizzare il profilo poliziotto di un agente, dopo l'esecuzione del comando viene mostrato un embed con:<br></p>
+
+      <p>Esempio</p>
+
+      <figure>
+        <img src="../assets/img/db-fdo/profilo-poliziotto.png" alt="" width="432">
+        <figcaption>Al fine di evitare il metagame ho censurate il <em>Nome Roblox</em> e la <em>Matricola</em>.</figcaption>
+      </figure>
+
+      <p>Vengono anche visualizzate due immagini: Una grande ed una Piccolina.</p>
+
+      <p>Le immagini cambiano in base alla fazione di appartenenza.</p>
+
+      <p>Se ti manca uno di questi dati recati nel canale: <a href="https://discord.com/channels/1407469914175836210/1462750293195231385">🛑・aggiornamento-dati</a> e aggiorna o compila i dati che ti mancano!</p>
+    </div>
+  </details>
+
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Sistema</th>
+          <th>Conteggi Assegnati</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sistema Arresti</td>
+          <td>Ad ogni arresto il Bot conteggia <code>+1</code> per l'utente che ha eseguito l'arresto e <code>+1</code> per il conteggio totale degli arresti.</td>
+        </tr>
+        <tr>
+          <td>Sistema Denunce</td>
+          <td>Ad ogni denuncia il Bot conteggia <code>+1</code> per l'utente che ha eseguito la denuncia e <code>+1</code> per il conteggio totale delle denunce.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="hint info">
+    <p>Di seguito verrà spiegato come è possibile attuare l'eliminazione dei dati nel Database.</p>
+  </div>
+
+  <ol>
+    <li>Richiedere l'eliminazione dei dati tramite ticket "Bugs" sul server principale di Florence.</li>
+    <li>Specificare l'FdO di appartenenza (Carabinieri, Guardia di Finanza, ect...)</li>
+    <li>Specificare il tipo/i tipi di Dati da eliminare.</li>
+  </ol>
+
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Tipologia di Dati</th>
+          <th>Tempo di Conservazione</th>
+          <th>Tempo di Elaborazione in caso di richiesta di Eliminazione</th>
+          <th>Tempo di Eliminazione</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Nome Roblox</td><td>Permanente</td><td>7 giorni lavorativi</td><td>14 giorni lavorativi</td></tr>
+        <tr><td>Codice comando</td><td>4 giorni</td><td>N/A</td><td>N/A</td></tr>
+        <tr><td>Matricola</td><td>Permanente</td><td>7 giorni lavorativi</td><td>14 giorni lavorativi</td></tr>
+        <tr><td>ID Utente</td><td>Permanente</td><td>7 giorni lavorativi</td><td>14 giorni lavorativi</td></tr>
+        <tr><td>Fazione</td><td>Permanente</td><td>7 giorni lavorativi</td><td>14 giorni lavorativi</td></tr>
+      </tbody>
+    </table>
+  </div>
+</article>
+
+<script src="../assets/js/nav.js"></script>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>
