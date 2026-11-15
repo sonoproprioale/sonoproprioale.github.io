@@ -1,6 +1,3 @@
-/* ==========================================================
-   Guida Florence RP Bot
-   ========================================================== */
 window.GUIDE = {
   title: 'Florence RP Bot',
   groups: [
@@ -24,6 +21,7 @@ window.GUIDE = {
           children: [
             { t: 'Economia', p: 'bot/florence-roleplay/economia.html', ready: true },
             { t: 'Stipendi', p: 'bot/florence-roleplay/stipendi.html', ready: true },
+            { t: 'Aziende', p: 'bot/florence-roleplay/aziende.html', ready: true },
             { t: 'Cittadinanza', p: 'bot/florence-roleplay/cittadinanza.html', ready: true },
             { t: "Porto d'Armi", p: 'bot/florence-roleplay/porto-darmi.html', ready: true }
           ]

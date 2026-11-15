@@ -321,3 +321,7 @@ details.expand .expand-body { padding: 2px 18px 6px; border-top: 1px solid var(-
 
 .doc .video-embed.wide { max-width: 100%; }
 .doc .video-embed.wide .frame { aspect-ratio: 16 / 9; }
+
+.brand-logo { width: 30px; height: 30px; object-fit: contain; border-radius: 8px; flex: none; }
+
+.doc .h-ic { margin-right: .5em; color: var(--accent); font-size: .85em; }

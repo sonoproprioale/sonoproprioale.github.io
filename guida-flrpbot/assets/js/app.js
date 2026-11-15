@@ -1,6 +1,3 @@
-/* ==========================================================
-   Guida Florence RP Bot
-   ========================================================== */
 (function () {
   'use strict';
 
@@ -10,6 +7,11 @@
   document.head.appendChild(fa);
 
   var ROOT = document.body.dataset.root || './';
+
+  var icon = document.createElement('link');
+  icon.rel = 'icon';
+  icon.href = ROOT + 'assets/img/logo.png';
+  document.head.appendChild(icon);
 
   var host = window.location.hostname;
   var LOCAL = window.location.protocol === 'file:' || host === '' || host === 'localhost' ||
@@ -98,7 +100,6 @@
           saveOpen(list);
         };
         btn.addEventListener('click', toggle);
-        // se sei già su questa pagina, il click sul titolo apre/chiude il menu
         a.addEventListener('click', function (e) {
           if (i.p === CURRENT) { e.preventDefault(); toggle(); }
         });
@@ -126,11 +127,18 @@
     var header = el('header', { 'class': 'site-header' });
     header.innerHTML =
       '<button class="icon-btn menu-btn" id="menuBtn" aria-label="Apri il menu" aria-controls="sidebar">☰</button>' +
-      '<a class="brand" href="' + ROOT + 'generale/informazioni.html"><span class="brand-mark">☁</span><span>' + G.title + '</span></a>' +
+      '<a class="brand" href="' + ROOT + 'generale/informazioni.html"><img class="brand-logo" src="' + ROOT + 'assets/img/logo.png" alt="" width="30" height="30"><span>' + G.title + '</span></a>' +
       '<div class="header-spacer"></div>' +
       '<div class="search"><input id="searchInput" type="search" placeholder="Cerca nella guida  ( / )" autocomplete="off" aria-label="Cerca nella guida">' +
       '<div class="search-results" id="searchResults" role="listbox"></div></div>' +
       '<button class="icon-btn" id="themeBtn"></button>';
+    var logo = header.querySelector('.brand-logo');
+    if (logo) {
+      logo.addEventListener('error', function () {
+        var mark = el('span', { 'class': 'brand-mark' }, '☁');
+        logo.replaceWith(mark);
+      });
+    }
     return header;
   }
   function wireSearch() {
