@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Standard di Sviluppo, Sicurezza e Gestione dei Bot · Florence RP Bot</title>
+  <script>(function(){try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}})()</script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-root="../" data-page="informativa-bot/standard-di-sviluppo.html">
+
+<article class="doc">
+  <h1>Standard di Sviluppo, Sicurezza e Gestione dei Bot</h1>
+
+  <div class="hint info">
+    <p><strong>Florence RP – Developer Team</strong><br>Versione: 1.0<br>Ultimo aggiornamento: 17 novembre 2026</p>
+  </div>
+
+  <h2>CAPITOLO I – DISPOSIZIONI GENERALI</h2>
+
+  <h3>Articolo 1 – Finalità</h3>
+
+  <p><strong>1.1.</strong> Il presente documento stabilisce gli standard tecnici, organizzativi e di sicurezza che devono essere rispettati da chiunque abbia sviluppato, stia sviluppando o intenda sviluppare un bot destinato ai server secondari di Florence RP.</p>
+
+  <p><strong>1.2.</strong> Le disposizioni hanno lo scopo di garantire uniformità, sicurezza, trasparenza, affidabilità e continuità operativa dei sistemi informatici utilizzati all'interno del progetto.</p>
+
+  <p><strong>1.3.</strong> Gli Standard costituiscono un riferimento obbligatorio per tutti gli sviluppatori, indipendentemente dal ruolo ricoperto, dall'esperienza tecnica o dalla tipologia di collaborazione.</p>
+
+  <h3>Articolo 2 – Ambito di applicazione</h3>
+
+  <p><strong>2.1.</strong> Gli Standard si applicano a:</p>
+
+  <ul>
+    <li>Bot Discord sviluppati per i server secondari di Florence RP.</li>
+    <li>Sistemi automatizzati collegati ai bot.</li>
+    <li>Database e sistemi di archiviazione utilizzati dai bot.</li>
+    <li>Integrazioni con API e servizi esterni.</li>
+    <li>Pannelli e strumenti amministrativi collegati ai bot.</li>
+    <li>Componenti software che concorrono al funzionamento dei servizi.</li>
+  </ul>
+
+  <p><strong>2.2.</strong> Le disposizioni si applicano sia ai progetti in fase di sviluppo sia ai bot già operativi.</p>
+
+  <p><strong>2.3.</strong> Nessuno sviluppatore è esonerato dal rispetto degli Standard.</p>
+
+  <h3>Articolo 3 – Autorità del Florence RP – Developer Team</h3>
+
+  <p><strong>3.1.</strong> Il Florence RP – Developer Team è il gruppo di riferimento per la supervisione tecnica e organizzativa dei bot destinati ai server secondari.</p>
+
+  <p><strong>3.2.</strong> Al gruppo competono:</p>
+
+  <ul>
+    <li>Valutazione delle proposte di sviluppo.</li>
+    <li>Autorizzazione alla realizzazione dei bot.</li>
+    <li>Valutazione degli aggiornamenti sostanziali.</li>
+    <li>Verifica della conformità tecnica.</li>
+    <li>Controllo delle misure di sicurezza.</li>
+    <li>Gestione delle procedure di autorizzazione.</li>
+    <li>Sospensione e disattivazione dei bot non conformi.</li>
+  </ul>
+
+  <p><strong>3.3.</strong> Le deliberazioni del Team Developer devono essere documentate e conservate.</p>
+
+  <h2>CAPITOLO II – PROCEDURA DI VALUTAZIONE E DI AUTORIZZAZIONE TECNICA</h2>
+
+  <h3>Articolo 4 – Istituzione della PVAT</h3>
+
+  <p><strong>4.1.</strong> È istituita la Procedura di Valutazione e di Autorizzazione Tecnica (PVAT).</p>
+
+  <p><strong>4.2.</strong> La PVAT costituisce la procedura obbligatoria attraverso la quale il Florence RP – Developer Team valuta le proposte di realizzazione e gli aggiornamenti sostanziali dei bot destinati ai server secondari.</p>
+
+  <p><strong>4.3.</strong> Nessun bot può essere introdotto e utilizzato nei server ufficiali senza aver ottenuto la preventiva autorizzazione.</p>
+
+  <h3>Articolo 5 – Presentazione della relazione tecnica</h3>
+
+  <p><strong>5.1.</strong> Ogni sviluppatore è tenuto a presentare al Florence RP – Developer Team una relazione tecnica prima di procedere alla realizzazione autorizzata del bot.</p>
+
+  <p><strong>5.2.</strong> La relazione deve contenere almeno:</p>
+
+  <ul>
+    <li>Nome e identificazione del bot.</li>
+    <li>Finalità e motivazioni del progetto.</li>
+    <li>Descrizione delle funzionalità previste.</li>
+    <li>Architettura generale del sistema.</li>
+    <li>Elenco dei comandi e delle relative autorizzazioni.</li>
+    <li>Linguaggi, librerie e dipendenze utilizzate.</li>
+    <li>Database e sistemi di archiviazione.</li>
+    <li>Categorie di dati trattati.</li>
+    <li>API e servizi esterni utilizzati.</li>
+    <li>Misure di sicurezza previste.</li>
+    <li>Modalità di avvio, gestione e manutenzione.</li>
+  </ul>
+
+  <p><strong>5.3.</strong> Il Florence RP – Developer Team può richiedere ulteriori informazioni, chiarimenti o integrazioni.</p>
+
+  <p><strong>5.4.</strong> La relazione tecnica deve essere sufficientemente dettagliata da consentire una valutazione del progetto sotto il profilo funzionale, tecnico e della sicurezza.</p>
+
+  <h3>Articolo 6 – Valutazione e deliberazione</h3>
+
+  <p><strong>6.1.</strong> Il Florence RP – Developer Team esamina la documentazione presentata.</p>
+
+  <p><strong>6.2.</strong> Al termine della valutazione, il gruppo può deliberare:</p>
+
+  <ul>
+    <li>Approvazione del progetto.</li>
+    <li>Approvazione subordinata a prescrizioni tecniche.</li>
+    <li>Richiesta di integrazioni.</li>
+    <li>Richiesta di modifiche progettuali.</li>
+    <li>Rigetto della proposta.</li>
+  </ul>
+
+  <p><strong>6.3.</strong> Ogni deliberazione deve essere formalizzata e registrata.</p>
+
+  <p><strong>6.4.</strong> La decisione deve essere comunicata allo sviluppatore interessato.</p>
+
+  <p><strong>6.5.</strong> In caso di prescrizioni o rigetto, possono essere indicate le relative motivazioni tecniche e le condizioni necessarie per una nuova valutazione.</p>
+
+  <h3>Articolo 7 – Autorizzazione alla realizzazione</h3>
+
+  <p><strong>7.1.</strong> La realizzazione operativa del bot può iniziare soltanto dopo la relativa autorizzazione del Florence RP – Developer Team.</p>
+
+  <p><strong>7.2.</strong> L'autorizzazione è riferita al progetto e alla documentazione tecnica approvata.</p>
+
+  <p><strong>7.3.</strong> Modifiche sostanziali al progetto autorizzato devono essere sottoposte alla procedura prevista dagli articoli successivi.</p>
+
+  <h3>Articolo 8 – Bot non autorizzati</h3>
+
+  <p><strong>8.1.</strong> Qualsiasi bot realizzato o introdotto nei server ufficiali senza aver completato la PVAT e senza aver ottenuto la relativa autorizzazione non può essere utilizzato.</p>
+
+  <p><strong>8.2.</strong> Qualora un bot non autorizzato venga comunque introdotto o utilizzato, deve essere immediatamente disattivato.</p>
+
+  <p><strong>8.3.</strong> La riattivazione è subordinata al completamento della PVAT e al rilascio della relativa autorizzazione.</p>
+
+  <h2>CAPITOLO III – STANDARD TECNICI</h2>
+
+  <h3>Articolo 9 – Requisiti tecnici</h3>
+
+  <p><strong>9.1.</strong> Ogni bot deve essere sviluppato utilizzando tecnologie, librerie e dipendenze adeguate alle funzionalità previste.</p>
+
+  <p><strong>9.2.</strong> Lo sviluppatore deve utilizzare versioni supportate delle dipendenze e mantenere aggiornati i componenti del sistema.</p>
+
+  <p><strong>9.3.</strong> Il codice deve essere organizzato in modo da consentire manutenzione, individuazione degli errori e comprensione delle funzionalità.</p>
+
+  <p><strong>9.4.</strong> Le dipendenze non necessarie devono essere evitate.</p>
+
+  <p><strong>9.5.</strong> Devono essere utilizzate esclusivamente API e funzionalità autorizzate.</p>
+
+  <h3>Articolo 10 – Organizzazione del codice</h3>
+
+  <p><strong>10.1.</strong> Il codice sorgente deve essere strutturato in maniera ordinata e comprensibile.</p>
+
+  <p><strong>10.2.</strong> Le funzionalità devono essere suddivise in componenti coerenti con le rispettive responsabilità.</p>
+
+  <p><strong>10.3.</strong> Le informazioni di configurazione devono essere separate dal codice sorgente quando tecnicamente possibile.</p>
+
+  <p><strong>10.4.</strong> Le modifiche devono essere realizzate in modo da ridurre il rischio di interferenze con le funzionalità già operative.</p>
+
+  <h3>Articolo 11 – Gestione degli errori</h3>
+
+  <p><strong>11.1.</strong> Ogni bot deve prevedere sistemi adeguati di gestione degli errori.</p>
+
+  <p><strong>11.2.</strong> Gli sviluppatori devono individuare e correggere i malfunzionamenti riscontrati.</p>
+
+  <p><strong>11.3.</strong> Gli errori rilevanti devono essere registrati e comunicati al Florence RP – Developer Team.</p>
+
+  <p><strong>11.4.</strong> Le funzionalità che presentano rischi per l'integrità dei dati o la sicurezza devono essere temporaneamente limitate o disabilitate quando necessario.</p>
+
+  <h3>Articolo 12 – Permessi e autorizzazioni Discord</h3>
+
+  <p><strong>12.1.</strong> Ogni bot deve richiedere esclusivamente i permessi necessari al proprio funzionamento.</p>
+
+  <p><strong>12.2.</strong> È vietata la richiesta ingiustificata di autorizzazioni eccessive.</p>
+
+  <p><strong>12.3.</strong> I comandi amministrativi devono prevedere controlli di autorizzazione adeguati.</p>
+
+  <p><strong>12.4.</strong> Le operazioni sensibili devono essere accessibili esclusivamente ai soggetti autorizzati.</p>
+
+  <h2>CAPITOLO IV – SICUREZZA E PROTEZIONE DEI DATI</h2>
+
+  <h3>Articolo 13 – Protezione delle credenziali</h3>
+
+  <p><strong>13.1.</strong> I token Discord, le chiavi API, le password e le altre credenziali devono essere protetti.</p>
+
+  <p><strong>13.2.</strong> È vietato pubblicare o condividere credenziali in repository pubblici, canali accessibili a soggetti non autorizzati o documentazione non protetta.</p>
+
+  <p><strong>13.3.</strong> Le credenziali devono essere conservate mediante modalità adeguate alla loro natura.</p>
+
+  <p><strong>13.4.</strong> In caso di sospetta compromissione, lo sviluppatore deve informare tempestivamente il Florence RP – Developer Team e attivare le misure necessarie.</p>
+
+  <h3>Articolo 14 – Gestione dei database</h3>
+
+  <p><strong>14.1.</strong> I database devono essere utilizzati esclusivamente per le finalità autorizzate.</p>
+
+  <p><strong>14.2.</strong> Lo sviluppatore deve adottare misure adeguate per evitare accessi non autorizzati, perdita, alterazione o divulgazione delle informazioni.</p>
+
+  <p><strong>14.3.</strong> Devono essere previste procedure di backup e recupero dei dati.</p>
+
+  <p><strong>14.4.</strong> Le informazioni devono essere conservate per periodi coerenti con le finalità del trattamento e con la documentazione approvata.</p>
+
+  <p><strong>14.5.</strong> Non è consentito introdurre nuove categorie di dati o finalità di trattamento senza la preventiva valutazione e autorizzazione richiesta.</p>
+
+  <h3>Articolo 15 – Protezione delle informazioni personali</h3>
+
+  <p><strong>15.1.</strong> Ogni sviluppatore deve rispettare la Privacy Policy di Florence RP e le disposizioni applicabili in materia di protezione dei dati personali.</p>
+
+  <p><strong>15.2.</strong> La raccolta delle informazioni deve essere limitata a quanto necessario per le funzionalità autorizzate.</p>
+
+  <p><strong>15.3.</strong> È vietato utilizzare le informazioni raccolte per finalità personali o estranee al progetto.</p>
+
+  <p><strong>15.4.</strong> Le informazioni non devono essere comunicate a soggetti non autorizzati.</p>
+
+  <p><strong>15.5.</strong> Ogni modifica che possa incidere sul trattamento dei dati deve essere comunicata e sottoposta alla valutazione prevista dalla PVAT, ove sostanziale.</p>
+
+  <h3>Articolo 16 – Segnalazione degli incidenti</h3>
+
+  <p><strong>16.1.</strong> Qualsiasi vulnerabilità, accesso non autorizzato, perdita di dati o incidente che possa compromettere la sicurezza di un bot deve essere comunicato tempestivamente al Florence RP – Developer Team.</p>
+
+  <p><strong>16.2.</strong> La segnalazione deve descrivere, per quanto possibile, la natura dell'incidente, i sistemi coinvolti e le misure già adottate.</p>
+
+  <p><strong>16.3.</strong> Gli sviluppatori devono collaborare alle attività di contenimento, analisi e risoluzione.</p>
+
+  <h2>CAPITOLO V – POLITICA DI TRASPARENZA</h2>
+
+  <h3>Articolo 17 – Obbligo di comunicazione delle modifiche</h3>
+
+  <p><strong>17.1.</strong> Tutte le modifiche effettuate a qualsiasi bot soggetto ai presenti Standard devono essere comunicate per iscritto al Florence RP – Developer Team.</p>
+
+  <p><strong>17.2.</strong> L'obbligo riguarda qualsiasi tipologia di modifica, comprese:</p>
+
+  <ul>
+    <li>Introduzione di nuove funzionalità.</li>
+    <li>Modifica di funzionalità esistenti.</li>
+    <li>Correzione di errori e malfunzionamenti.</li>
+    <li>Modifiche al codice sorgente.</li>
+    <li>Modifiche ai database.</li>
+    <li>Aggiornamenti delle dipendenze.</li>
+    <li>Modifiche alle autorizzazioni Discord.</li>
+    <li>Modifiche ai sistemi di sicurezza.</li>
+    <li>Modifiche alle modalità di trattamento dei dati.</li>
+  </ul>
+
+  <p><strong>17.3.</strong> La comunicazione deve descrivere chiaramente le modifiche effettuate e indicare il bot interessato.</p>
+
+  <p><strong>17.4.</strong> Il Florence RP – Developer Team deve poter conservare uno storico delle modifiche apportate a ciascun bot.</p>
+
+  <h3>Articolo 18 – Modifiche ordinarie e sostanziali</h3>
+
+  <p><strong>18.1.</strong> Le modifiche vengono distinte in due categorie.</p>
+
+  <h4>A. Modifiche ordinarie</h4>
+
+  <p>Sono modifiche che non alterano in maniera sostanziale il funzionamento, l'architettura, la sicurezza o le finalità del bot.</p>
+
+  <p>Possono essere effettuate autonomamente dallo sviluppatore, purché:</p>
+
+  <ul>
+    <li>Siano conformi agli Standard.</li>
+    <li>Non compromettano le funzionalità esistenti.</li>
+    <li>Siano comunicate per iscritto al Team Developer.</li>
+    <li>Siano registrate nella documentazione del progetto.</li>
+  </ul>
+
+  <h4>B. Modifiche sostanziali</h4>
+
+  <p>Sono modifiche che possono incidere significativamente su:</p>
+
+  <ul>
+    <li>Architettura del sistema.</li>
+    <li>Funzionalità principali.</li>
+    <li>Sicurezza.</li>
+    <li>Permessi e autorizzazioni.</li>
+    <li>Database.</li>
+    <li>Categorie di dati trattati.</li>
+    <li>Finalità del trattamento.</li>
+    <li>Integrazioni esterne.</li>
+  </ul>
+
+  <p><strong>18.2.</strong> Le modifiche sostanziali richiedono una preventiva valutazione e autorizzazione del Florence RP – Developer Team attraverso la PVAT.</p>
+
+  <p><strong>18.3.</strong> Nessuna modifica sostanziale può essere messa in produzione prima dell'autorizzazione.</p>
+
+  <p><strong>18.4.</strong> In caso di interventi urgenti necessari a contenere un incidente di sicurezza, lo sviluppatore può adottare immediatamente le misure indispensabili, informando tempestivamente il Team Developer e sottoponendo successivamente l'intervento alla valutazione prevista.</p>
+
+  <h3>Articolo 19 – Obbligo di collaborazione</h3>
+
+  <p><strong>19.1.</strong> Gli sviluppatori sono tenuti a collaborare con il Florence RP – Developer Team durante le attività di valutazione, verifica e manutenzione.</p>
+
+  <p><strong>19.2.</strong> Devono essere fornite informazioni veritiere e complete sul funzionamento dei bot.</p>
+
+  <p><strong>19.3.</strong> È vietato occultare modifiche, vulnerabilità, errori rilevanti o funzionalità non autorizzate.</p>
+
+  <h2>CAPITOLO VI – PROPRIETÀ INTELLETTUALE E RESPONSABILITÀ</h2>
+
+  <h3>Articolo 20 – Proprietà del codice sorgente</h3>
+
+  <p><strong>20.1.</strong> Il codice sorgente di ogni bot rimane di proprietà del rispettivo sviluppatore, salvo diversi accordi validamente conclusi.</p>
+
+  <p><strong>20.2.</strong> La realizzazione di un bot per Florence RP non comporta automaticamente il trasferimento della proprietà intellettuale del codice al Florence RP – Developer Team.</p>
+
+  <p><strong>20.3.</strong> Lo sviluppatore conserva i diritti sul proprio codice nel rispetto degli eventuali accordi e delle autorizzazioni concesse.</p>
+
+  <h3>Articolo 21 – Accesso al codice e ai sistemi</h3>
+
+  <p><strong>21.1.</strong> Il Florence RP – Developer Team determina il livello di accesso al codice sorgente e ai sistemi di ciascun bot.</p>
+
+  <p><strong>21.2.</strong> L'accesso può essere:</p>
+
+  <ul>
+    <li>Completo.</li>
+    <li>Parziale.</li>
+    <li>Limitato a specifiche componenti o funzionalità.</li>
+  </ul>
+
+  <p><strong>21.3.</strong> La determinazione del livello di accesso avviene in funzione della tipologia del bot, della complessità del sistema e delle esigenze di supervisione, sicurezza e continuità operativa.</p>
+
+  <p><strong>21.4.</strong> Lo sviluppatore deve garantire la disponibilità delle informazioni e degli accessi autorizzati necessari alle attività di supervisione.</p>
+
+  <p><strong>21.5.</strong> L'accesso tecnico non comporta automaticamente il trasferimento della proprietà intellettuale del codice.</p>
+
+  <h3>Articolo 22 – Responsabilità dello sviluppatore</h3>
+
+  <p><strong>22.1.</strong> Lo sviluppatore è responsabile delle attività di progettazione, realizzazione, modifica e manutenzione del codice da lui prodotto, nei limiti previsti dalla normativa applicabile.</p>
+
+  <p><strong>22.2.</strong> Lo sviluppatore è tenuto a operare con diligenza, rispettando gli Standard e le deliberazioni del Florence RP – Developer Team.</p>
+
+  <p><strong>22.3.</strong> Eventuali errori, manomissioni, modifiche non autorizzate o condotte riconducibili allo sviluppatore originale devono essere valutati in relazione alle effettive responsabilità e alle circostanze del caso.</p>
+
+  <h3>Articolo 23 – Responsabilità del Florence RP – Developer Team</h3>
+
+  <p><strong>23.1.</strong> Il Florence RP – Developer Team svolge attività di supervisione, valutazione e gestione tecnica secondo le competenze e gli accessi effettivamente attribuiti.</p>
+
+  <p><strong>23.2.</strong> Il gruppo non assume automaticamente la responsabilità per errori, manomissioni o danni direttamente riconducibili a condotte dello sviluppatore originale.</p>
+
+  <p><strong>23.3.</strong> La presente disposizione non esclude eventuali responsabilità proprie del Team Developer o di altri soggetti quando previste dalla legge.</p>
+
+  <h2>CAPITOLO VII – RELAZIONE TECNICA E DOCUMENTAZIONE</h2>
+
+  <h3>Articolo 24 – Obbligo di documentazione tecnica</h3>
+
+  <p><strong>24.1.</strong> Ogni sviluppatore deve predisporre e consegnare al Florence RP – Developer Team una relazione tecnica relativa al proprio bot.</p>
+
+  <p><strong>24.2.</strong> La relazione deve essere consegnata nell'ambito della PVAT e costituisce il riferimento documentale per la valutazione del progetto.</p>
+
+  <p><strong>24.3.</strong> La documentazione deve descrivere:</p>
+
+  <ul>
+    <li>Finalità del bot.</li>
+    <li>Funzionamento generale.</li>
+    <li>Funzionalità disponibili.</li>
+    <li>Comandi e autorizzazioni.</li>
+    <li>Architettura software.</li>
+    <li>Database e informazioni trattate.</li>
+    <li>API e servizi esterni.</li>
+    <li>Dipendenze.</li>
+    <li>Modalità di configurazione.</li>
+    <li>Procedure di avvio.</li>
+    <li>Gestione degli errori.</li>
+    <li>Misure di sicurezza.</li>
+    <li>Procedure di manutenzione.</li>
+  </ul>
+
+  <p><strong>24.4.</strong> La relazione deve essere aggiornata quando intervengono modifiche sostanziali al sistema.</p>
+
+  <p><strong>24.5.</strong> Il Florence RP – Developer Team può richiedere integrazioni o aggiornamenti della documentazione.</p>
+
+  <h3>Articolo 25 – Valore della relazione tecnica</h3>
+
+  <p><strong>25.1.</strong> La relazione tecnica costituisce la base documentale per la valutazione e l'autorizzazione del bot.</p>
+
+  <p><strong>25.2.</strong> Il Florence RP – Developer Team può utilizzare la relazione per verificare la corrispondenza tra il progetto autorizzato e il sistema effettivamente realizzato.</p>
+
+  <p><strong>25.3.</strong> Eventuali differenze rilevanti devono essere comunicate e sottoposte alla procedura di valutazione applicabile.</p>
+
+  <h2>CAPITOLO VIII – VERIFICHE E CONTROLLI</h2>
+
+  <h3>Articolo 26 – Verifiche periodiche</h3>
+
+  <p><strong>26.1.</strong> Il Florence RP – Developer Team effettua verifiche ordinarie sui bot autorizzati con una cadenza indicativa di circa quattordici giorni.</p>
+
+  <p><strong>26.2.</strong> Le verifiche sono finalizzate a controllare:</p>
+
+  <ul>
+    <li>Rispetto degli Standard di sviluppo.</li>
+    <li>Integrità e sicurezza dei sistemi.</li>
+    <li>Permessi e autorizzazioni Discord.</li>
+    <li>Funzionalità effettivamente operative.</li>
+    <li>Corrispondenza con la relazione tecnica approvata.</li>
+    <li>Gestione e conservazione dei dati.</li>
+    <li>Presenza di eventuali anomalie.</li>
+    <li>Conformità alle deliberazioni precedentemente adottate.</li>
+  </ul>
+
+  <p><strong>26.3.</strong> Le verifiche devono essere documentate, ove opportuno, mediante registrazioni o relazioni interne.</p>
+
+  <h3>Articolo 27 – Verifiche straordinarie</h3>
+
+  <p><strong>27.1.</strong> Il Florence RP – Developer Team può effettuare verifiche straordinarie in qualsiasi momento.</p>
+
+  <p><strong>27.2.</strong> Tali verifiche possono essere disposte in presenza di:</p>
+
+  <ul>
+    <li>Segnalazioni.</li>
+    <li>Vulnerabilità.</li>
+    <li>Incidenti di sicurezza.</li>
+    <li>Malfunzionamenti.</li>
+    <li>Modifiche non comunicate.</li>
+    <li>Sospetti utilizzi non autorizzati.</li>
+    <li>Necessità di tutela dell'infrastruttura.</li>
+  </ul>
+
+  <p><strong>27.3.</strong> Gli sviluppatori devono collaborare alle verifiche e fornire le informazioni necessarie nell'ambito delle rispettive autorizzazioni.</p>
+
+  <h2>CAPITOLO IX – VIOLAZIONI E PROVVEDIMENTI</h2>
+
+  <h3>Articolo 28 – Violazioni degli Standard</h3>
+
+  <p><strong>28.1.</strong> La violazione delle disposizioni contenute nel presente documento può comportare l'adozione di provvedimenti da parte del Florence RP – Developer Team.</p>
+
+  <p><strong>28.2.</strong> I provvedimenti sono determinati in funzione della gravità della violazione, delle conseguenze prodotte e dell'eventuale reiterazione.</p>
+
+  <h3>Articolo 29 – Procedura progressiva</h3>
+
+  <p><strong>29.1.</strong> In presenza di violazioni non gravi, il Florence RP – Developer Team può adottare una procedura progressiva composta da:</p>
+
+  <ol>
+    <li>Richiamo allo sviluppatore.</li>
+    <li>Comunicazione delle irregolarità riscontrate.</li>
+    <li>Richiesta di correzione entro un termine stabilito.</li>
+    <li>Verifica dell'avvenuta correzione.</li>
+    <li>Eventuale sospensione del bot in caso di mancato adeguamento.</li>
+    <li>Eventuale disattivazione definitiva nei casi previsti.</li>
+  </ol>
+
+  <h3>Articolo 30 – Sospensione e disattivazione immediata</h3>
+
+  <p><strong>30.1.</strong> In presenza di violazioni gravi, il Florence RP – Developer Team può disporre la sospensione o disattivazione immediata del bot.</p>
+
+  <p><strong>30.2.</strong> L'intervento immediato può essere disposto soprattutto quando sussistono:</p>
+
+  <ul>
+    <li>Rischi per la sicurezza.</li>
+    <li>Compromissione dei dati.</li>
+    <li>Accessi non autorizzati.</li>
+    <li>Vulnerabilità critiche.</li>
+    <li>Manomissioni intenzionali.</li>
+    <li>Funzionalità non autorizzate.</li>
+    <li>Rischi per l'integrità dei server ufficiali.</li>
+  </ul>
+
+  <p><strong>30.3.</strong> Il provvedimento deve essere documentato e comunicato allo sviluppatore interessato, quando possibile senza compromettere le esigenze di sicurezza.</p>
+
+  <h3>Articolo 31 – Riattivazione</h3>
+
+  <p><strong>31.1.</strong> La riattivazione di un bot sospeso è subordinata alla risoluzione delle irregolarità riscontrate.</p>
+
+  <p><strong>31.2.</strong> Il Florence RP – Developer Team può richiedere ulteriori verifiche e una nuova valutazione tecnica prima di autorizzare la riattivazione.</p>
+
+  <hr>
+
+  <h2>CAPITOLO X – DISPOSIZIONI FINALI</h2>
+
+  <h3>Articolo 32 – Obbligatorietà</h3>
+
+  <p><strong>32.1.</strong> Il rispetto dei presenti Standard è obbligatorio per tutti gli sviluppatori interessati.</p>
+
+  <p><strong>32.2.</strong> La mancata conoscenza degli Standard non costituisce automaticamente una giustificazione per la loro inosservanza.</p>
+
+  <h3>Articolo 33 – Aggiornamenti degli Standard</h3>
+
+  <p><strong>33.1.</strong> Il Florence RP – Developer Team può aggiornare il presente documento per esigenze tecniche, organizzative o di sicurezza.</p>
+
+  <p><strong>33.2.</strong> Le nuove versioni devono essere comunicate agli sviluppatori interessati.</p>
+
+  <p><strong>33.3.</strong> Ogni revisione deve riportare la relativa versione e data di aggiornamento.</p>
+
+  <h3>Articolo 34 – Entrata in vigore</h3>
+
+  <p><strong>34.1.</strong> I presenti Standard entrano in vigore dalla data di approvazione stabilita dal Florence RP – Developer Team.</p>
+
+  <p><strong>34.2.</strong> I bot già esistenti devono essere sottoposti a verifica di conformità secondo le modalità e le tempistiche stabilite dal Team Developer.</p>
+
+  <p><strong>34.3.</strong> Gli sviluppatori sono tenuti ad adeguare i rispettivi sistemi alle disposizioni applicabili.</p>
+
+  <hr>
+
+  <p><strong>FINE DEL DOCUMENTO</strong></p>
+
+  <p><strong>Florence RP – Developer Team</strong><br>Standard ufficiali di sviluppo, sicurezza e gestione dei bot</p>
+</article>
+
+<script src="../assets/js/nav.js"></script>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>

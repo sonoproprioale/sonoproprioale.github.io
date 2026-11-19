@@ -54,6 +54,14 @@ window.GUIDE = {
       ]
     },
     {
+      title: 'Informativa Bot',
+      items: [
+        { t: 'Termini di Servizio', p: 'informativa-bot/termini-di-servizio.html', i: 'fa-file-contract', ready: true },
+        { t: 'Privacy Policy', p: 'informativa-bot/privacy-policy.html', i: 'fa-user-shield', ready: true },
+        { t: 'Standard di Sviluppo, Sicurezza e Gestione dei Bot', p: 'informativa-bot/standard-di-sviluppo.html', i: 'fa-laptop-code', ready: true }
+      ]
+    },
+    {
       title: 'Parte Finale',
       items: [
         { t: 'Informazioni generali', p: 'parte-finale/informazioni-generali.html', i: 'fa-book-open', ready: true },
